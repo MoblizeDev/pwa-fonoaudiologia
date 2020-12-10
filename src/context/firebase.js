@@ -5,14 +5,13 @@ require("firebase/database");
 require('firebase/storage');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD5yT8m3wCz-CIbrN-ZBiUvnqtld1E5EAI",
-    authDomain: "projetofono-c9088.firebaseapp.com",
-    databaseURL: "https://projetofono-c9088.firebaseio.com",
-    projectId: "projetofono-c9088",
-    storageBucket: "projetofono-c9088.appspot.com",
-    messagingSenderId: "1045130767348",
-    appId: "1:1045130767348:web:920820d34e2fd0f63f67a1"
-
+    apiKey: "AIzaSyBpFAIvGBQWQEMZyahgoGvs7huO0YJk2zc",
+    authDomain: "pwa-fono-moblize.firebaseapp.com",
+    databaseURL: "https://pwa-fono-moblize-default-rtdb.firebaseio.com/",
+    projectId: "pwa-fono-moblize",
+    storageBucket: "pwa-fono-moblize.appspot.com",
+    messagingSenderId: "763812556385",
+    appId: "1:763812556385:web:8bec6ce00216ff64b50420"
 };
 
 firebase.initializeApp(firebaseConfig);

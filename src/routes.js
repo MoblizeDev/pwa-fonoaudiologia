@@ -18,7 +18,7 @@ import ContatosMobile from './pages/Mobile/Contatos'
 
 
 function Routes() {
-  const user = JSON.parse(localStorage.getItem("userFono"));
+  const user = true
 
   return (
     <BrowserRouter>
@@ -27,12 +27,12 @@ function Routes() {
         {user && (
           window.innerWidth <= 768?
           <Route exact path='/' component={HomeMobile} />:
-          <RouteWrapper layout={Layout} exact path="/" component={Prontuarios} />
+          <Route exact path="/" component={Prontuarios} />
         )}
          {user &&  
              window.innerWidth <= 768?
              <Route exact path='/evolucoesMobile' component={Evolucoes} />:
-            <RouteWrapper layout={Layout} exact path="/evolucoes" component={Evolucoes} />
+            <Route exact path="/evolucoes" component={Evolucoes} />
           }
         {user &&(
           <Route exact path='/detalhes' component={DetailsMobile}/>
@@ -47,26 +47,24 @@ function Routes() {
           <Route exact path='/image' component={Image}/>
         )}
         {user && (
-          <RouteWrapper
-            layout={Layout}
+          <Route
             exact
             path="/tabela"
             component={Tabela}
           />
         )}
         {user && (
-          <RouteWrapper
-            layout={Layout}
+          <Route
             exact
             path="/setores"
             component={Setores}
           />
         )}
         {user && (
-          <RouteWrapper layout={Layout} exact path="/anual" component={Geral} />
+          <Route exact path="/anual" component={Geral} />
         )}
         {user && (
-          <RouteWrapper layout={Layout} exact path="/geral" component={Home} />
+          <Route exact path="/geral" component={Home} />
         )}
           
       </Switch>
